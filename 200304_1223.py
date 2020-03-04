@@ -14,7 +14,7 @@ class SinWave(scene.ShapeNode):
     self.path.move_to(0, p_size[1]/2)
     for i in range(hz):
       y = sin(radians(2*pi*i))*hz
-      self.path.line_to(div*i, y+p_size[1])
+      self.path.line_to(div*i, y+p_size[1]/2)
     self.stroke_color = 'blue'
     self.fill_color = (0,0,0,0)
     
